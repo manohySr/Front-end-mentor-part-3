@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./../assets/fonts/static/PlusJakartaSans-Medium.ttf")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf")
+    format("woff2");
+  font-weight: 800; /* Bold weight */
+  font-style: normal;
+}
+
+$color-red: hsl(1, 90%, 64%);
+$color-blue: hsl(219, 85%, 26%);
+
+$color-white: hsl(0, 0%, 100%);
+$color-gray-blue-light: hsl(210, 60%, 98%);
+$color-gray-blue-1: hsl(211, 68%, 94%);
+$color-gray-blue-2: hsl(205, 33%, 90%);
+$color-gray: hsl(219, 14%, 63%);
+$color-gray-blue-dark: hsl(219, 12%, 42%);
+$color-gray-blue-very-dark: hsl(224, 21%, 14%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans";
+  background-color: $color-gray-blue-light;
+  color: $color-gray-blue-dark;
+}
+.container {
+  font-size: 1.6rem;
+  background-color: $color-white;
+  border-radius: 1rem;
+  width: 80%;
+  padding: 2rem 3rem;
+  padding-bottom: 0;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  margin: 5rem auto;
+  box-shadow: 2px 2px 20px $color-gray-blue-2;
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  &-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    color: $color-gray-blue-very-dark;
+  }
+  &-number {
+    display: block;
+    // align-self: rt;
+    font-size: 1.5rem;
+    color: $color-white;
+    background-color: $color-blue;
+    padding: 0.2rem 0.8em;
+    border-radius: 0.5rem;
+    margin-left: 1.5rem;
+  }
+  &-parameter {
+    margin-left: auto;
+    color: $color-gray-blue-dark;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+}
+
+.notification {
+  display: flex;
+  background-color: $color-gray-blue-light;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 1px 3px $color-gray-blue-2;
+  &--readed {
+    display: flex;
+    background-color: $color-white;
+    padding: 2rem;
+    border-radius: 1rem;
+    // margin-bottom: 1.5rem;
+  }
+  &-image-container {
+    // width: 2rem;
+    // height: auto;
+  }
+  &-date {
+    margin-top: 0.5rem;
+    color: $color-gray;
+  }
+}
+
+.message {
+  margin-top: 1.5rem;
+  border: 1px solid $color-gray-blue-2;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 1px $color-gray-blue-2;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-gray-blue-1;
+  }
+}
+.image {
+  margin-left: auto;
+  //   width: 5rem;
+  align-self: flex-start;
+  cursor: pointer;
+
+  &-img {
+    width: 4.5rem;
+  }
+}
+
+.user {
+  margin-left: 2rem;
+  //   margin-top0.5rem;
+
+  &-image {
+    width: 4.5rem;
+    height: auto;
+  }
+  &-name {
+    color: $color-gray-blue-very-dark;
+    font-weight: 800;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  &-notification {
+    &--bright-hover {
+      font-weight: 800;
+      color: $color-gray-blue-dark;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-blue;
+      }
+    }
+
+    &--bright {
+      font-weight: 800;
+      cursor: pointer;
+      color: $color-blue;
+    }
+
+    &--bright-not-hover {
+      font-weight: 800;
+      color: $color-gray-blue-dark;
+      cursor: pointer;
+    }
+  }
+  &-point {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10rem;
+    background-color: $color-red;
+    margin-left: 0.5rem;
+  }
+}
+
+.attribution {
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+}

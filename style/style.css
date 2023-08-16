@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./../assets/fonts/static/PlusJakartaSans-Medium.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf") format("woff2");
+  font-weight: 800; /* Bold weight */
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans";
+  background-color: hsl(210, 60%, 98%);
+  color: hsl(219, 12%, 42%);
+}
+
+.container {
+  font-size: 1.6rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  width: 80%;
+  padding: 2rem 3rem;
+  padding-bottom: 0;
+  margin: 5rem auto;
+  box-shadow: 2px 2px 20px hsl(205, 33%, 90%);
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.header-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  color: hsl(224, 21%, 14%);
+}
+.header-number {
+  display: block;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 85%, 26%);
+  padding: 0.2rem 0.8em;
+  border-radius: 0.5rem;
+  margin-left: 1.5rem;
+}
+.header-parameter {
+  margin-left: auto;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+.header-parameter:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification {
+  display: flex;
+  background-color: hsl(210, 60%, 98%);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 1px 3px hsl(205, 33%, 90%);
+}
+.notification--readed {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.notification-date {
+  margin-top: 0.5rem;
+  color: hsl(219, 14%, 63%);
+}
+
+.message {
+  margin-top: 1.5rem;
+  border: 1px solid hsl(205, 33%, 90%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 1px hsl(205, 33%, 90%);
+  cursor: pointer;
+}
+.message:hover {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.image {
+  margin-left: auto;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.image-img {
+  width: 4.5rem;
+}
+
+.user {
+  margin-left: 2rem;
+}
+.user-image {
+  width: 4.5rem;
+  height: auto;
+}
+.user-name {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  cursor: pointer;
+}
+.user-name:hover {
+  color: hsl(219, 85%, 26%);
+}
+.user-notification--bright-hover {
+  font-weight: 800;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+.user-notification--bright-hover:hover {
+  color: hsl(219, 85%, 26%);
+}
+.user-notification--bright {
+  font-weight: 800;
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.user-notification--bright-not-hover {
+  font-weight: 800;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+.user-point {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10rem;
+  background-color: hsl(1, 90%, 64%);
+  margin-left: 0.5rem;
+}
+
+.attribution {
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+}/*# sourceMappingURL=style.css.map */
