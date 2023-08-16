@@ -42,6 +42,9 @@ html {
   font-family: "Plus Jakarta Sans";
   background-color: $color-gray-blue-light;
   color: $color-gray-blue-dark;
+  @media only screen and (max-width: 500px) {
+    font-size: 50%;
+  }
 }
 .container {
   font-size: 1.6rem;
