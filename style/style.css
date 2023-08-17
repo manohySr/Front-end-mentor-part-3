@@ -38,16 +38,24 @@ html {
   font-size: 1.6rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
-  width: 80%;
+  width: 48%;
   padding: 2rem 3rem;
   padding-bottom: 0;
   margin: 5rem auto;
   box-shadow: 2px 2px 20px hsl(205, 33%, 90%);
 }
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 80%;
+    margin: 5rem auto;
+    padding: 1rem 1.5rem;
+  }
+}
 @media only screen and (max-width: 500px) {
   .container {
     width: 100%;
     margin: 0;
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -123,6 +131,7 @@ html {
 
 .user {
   margin-left: 2rem;
+  line-height: 2.5rem;
 }
 .user-image {
   width: 4.5rem;
@@ -164,6 +173,6 @@ html {
 }
 
 .attribution {
-  margin-bottom: 4rem;
+  margin: 2rem 0;
   margin-left: 2rem;
 }/*# sourceMappingURL=style.css.map */
