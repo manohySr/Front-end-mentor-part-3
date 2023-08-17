@@ -27,7 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![image](https://github.com/manohySr/Front-end-mentor-part-3/assets/86122918/92a332c2-da4a-4059-9e24-079ef3195bcf)
+![image](https://github.com/manohySr/Front-end-mentor-part-3/assets/86122918/4820629d-8b0b-4983-beb5-29ce80d41374)
+
 
 ![image](https://github.com/manohySr/Front-end-mentor-part-3/assets/86122918/35eff601-84cc-4a08-9654-907278b071d0)
 
